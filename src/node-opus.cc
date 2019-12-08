@@ -243,6 +243,6 @@ class OpusEncoder : public ObjectWrap {
 };
 
 
-NODE_MODULE_INIT( Local< Object > exports, Local< Value > module, Local< Context > context ) {
+NODE_MODULE_INITIALIZER( Local< Object > exports, Local< Value > module, Local< Context > context ) {
 	OpusEncoder::Init( exports );
 }
