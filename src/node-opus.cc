@@ -247,4 +247,4 @@ void NodeInit( Local< Object > exports ) {
 	OpusEncoder::Init( exports );
 }
 
-NODE_MODULE(node_opus, NodeInit)
+NODE_MODULE_CONTEXT_AWARE(node_opus, NodeInit)
